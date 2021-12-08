@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Køb og salg af varer</h1>
+    <h2>Applikationen der udkonkonkurrerer DBA </h2>
+    <form id="delete">
+      <input value="Slet profil" type="submit" />
+    </form>
+    <form id = "logoutUser">
+    <input value="Logout" type="submit" />
+  </form>
+  </body>
+    
+  <body>
+    <br> <label id="form">email:</label> <br>
+    <input type="email" name="email" id="newEmail" placeholder="Ny email">
+
+    <br><label>Password:</label> <br>
+    <input type="password" name="password" id="newPassword" placeholder="Ny password">
+
+    <br>
+    <button id="update" value="Submit" type="submit" onclick="updateUser()" class="profile-btn">Opdater profil</button> 
+
+    <script src="updateUser.js"></script>
+  </body>
+<br>
+<br>
+<body>
+  <br>
+  
+  <form id="form1">
+    kategori: <br><select id="varekategori">
+        <option value="Møbler">Møbler</option>
+        <option value="Elektronik">Elektronik</option>
+        <option value="Legetøj">Legetøj</option>
+        <option value="Have">Have</option>
+    </select>
+  <input placeholder="Produkt" id="produkt" />
+  <input placeholder="Pris" id="pris" />
+  <br>
+  <input type='file' id='billede'/>
+  <br>
+  <input value="Opret en vare" type="submit" />
+  <br>
+  </form>
+</body>
+<script src="opretVarer.js"></script>
+
+<body>
+  <script src="index.js"></script>
+  <form id="delete1">
+    <input value="Slet varer" type="submit" />
+  </form>
+</body>
+
+<body>
+  Kategori: <br><select id=nyvarekategori>
+        <option value="Møbler">Møbler</option>
+        <option value="Elektronik">Elektronik</option>
+        <option value="Legetøj">Legetøj</option>
+        <option value="Have">Have</option>
+  </select>
+
+      <br><label>Produkt</label> <br>
+      <input type="produkt" name="produkt" id='nytprodukt' placeholder="Nyt produkt">
+
+      <br><label>Pris</label> <br>
+      <input type="pris" name="pris" id='nypris' placeholder="Ny Pris">
+      <br>
+      <input type='file' id='billede'>
+      <br>
+      <br>
+      <button id="update" value="Submit" type="submit" onclick="updateVare()" class="profile-btn">Opdater vare</button>
+
+      <script src="updateVare.js"></script>
+</body>
+<br>
+<br>
+<body>
+  <script src="alleProdukter.js"></script>
+  <button id='klik'>Se alle dine varer</button>
+    <table id="vareliste"></table>
+</body>
+<br>
+<body>
+  Kategorimenu: <br>
+  <button id='klikMøbler'>Møbler</button>
+  <button id='klikElektronik'>Elektronik</button>
+  <button id='klikLegetøj'>Legetøj</button>
+  <button id='klikHave'>Have</button>
+    <table id= "VareKategoriListe"></table>
+  <script src="alleProdukter.js"></script>
+</body>
+
+</html>
