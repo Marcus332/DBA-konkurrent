@@ -27,7 +27,7 @@ document.getElementById("form1").addEventListener("submit", (event) => {
           if (response) {
             localStorage.setItem("varer", JSON.stringify(varer));
           } {
-              window.alert("varer oprettet!")
+              window.alert("vare oprettet!")
         }
     })
     // Hvis noget går galt

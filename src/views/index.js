@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .then((response) => {
         if (response) {
           localStorage.removeItem("varer");
-          window.alert("varer");
+          window.alert("Vare slettet!");
         }
       })
       .catch(() => {

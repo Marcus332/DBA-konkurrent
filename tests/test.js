@@ -11,7 +11,7 @@ describe('login', () => {
             chai
             .request('http://localhost:8000/users')
             .post("/login")
-            .send({email:"random.jeg@gmail.com", password:"123456789"})
+            .send({email:"random.je@gmail.com", password:"123456789"})
             .end((err, res) => {
                 res.should.have.status(200)
                 done()
@@ -26,7 +26,9 @@ describe('login', () => {
                 .end((err, res) => {
                     res.should.have.status(404)
                     done()
-                })})})
+                })
+            })
+        })  
         });
-    })
-    })})
+    })})})
+    
