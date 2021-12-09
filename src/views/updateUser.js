@@ -24,6 +24,7 @@ fetch("http://localhost:8000/users/update", {
     if (response) {
         localStorage.setItem('user', JSON.stringify(Update))
         location.href = "/index.html";
+        window.alert("Bruger opdateret!")
     }
 })
 // Catch - funktion hvis der er noget går galt

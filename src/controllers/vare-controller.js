@@ -10,8 +10,8 @@ router.post("/opretVarer", (req, res) => {
   res.status(200).send(true);
 });
 
+// Oprettelse af flere varer
 const varer2 = '/varer.json'
-
 
 // Sender varer.json filen
 router.get("/returner_alle_varer", (req, res) => {
